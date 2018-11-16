@@ -1,0 +1,35 @@
+
+    zeit(t) ::= <<
+        <t:{t|<position(t)>Time: <t.text><\n>}>
+    >>
+
+    ip(t) ::= <<
+        <t:{t|Line: <position(t)>IP: <t.text><\n>}>
+    >>
+
+    position(t) ::= "<t:{t|Line: <t.line>, Column: <t.charPositionInLine>, }>"
+
+    metric(m) ::= <<
+<m:{m|
+<operands(m.operands)>
+<operators(m.operators)>
+N1: <m.operatorCount>
+N2: <m.operandCount>
+n1: <m.distinctOperatorCount>
+n2: <m.distinctOperandCount>
+N: <m.programLength>
+n: <m.vocabularySize>
+V: <m.volume>
+D: <m.difficulty>
+E: <m.effort>
+}>
+>>
+
+
+    operands(map)::=<<
+<map.keys:{x|Operand:<map.(x)>x   <x><\n>}>
+    >>
+
+    operators(map)::=<<
+<map.keys:{x|Operator:<map.(x)>x   <x><\n>}>
+    >>
