@@ -1,5 +1,5 @@
-// Generated from E:/OneDrive/Java/übs/src/main/java/syntax_interpreter\Expr.g4 by ANTLR 4.7
-package syntax_interpreter;
+// Generated from E:/OneDrive/Studium/übs/src/main/java/syntax_interpreter/Aufg4\Expr.g4 by ANTLR 4.7
+package syntax_interpreter.Aufg4;
 
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;

@@ -1,4 +1,4 @@
-package syntax_interpreter;
+package syntax_interpreter.Aufg2;
 
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.CommonTokenStream;

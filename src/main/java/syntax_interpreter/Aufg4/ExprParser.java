@@ -1,5 +1,5 @@
-// Generated from E:/OneDrive/Java/übs/src/main/java/syntax_interpreter\Expr.g4 by ANTLR 4.7
-package syntax_interpreter;
+// Generated from E:/OneDrive/Studium/übs/src/main/java/syntax_interpreter/Aufg4\Expr.g4 by ANTLR 4.7
+package syntax_interpreter.Aufg4;
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -101,11 +101,6 @@ public class ExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitNewline(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitNewline(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class CalcContext extends StatContext {
 		public ExprContext expr() {
@@ -120,11 +115,6 @@ public class ExprParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitCalc(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitCalc(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
@@ -196,11 +186,6 @@ public class ExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitDIV(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitDIV(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class NumberContext extends ExprContext {
 		public TerminalNode INT() { return getToken(ExprParser.INT, 0); }
@@ -212,11 +197,6 @@ public class ExprParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitNumber(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitNumber(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class ADDContext extends ExprContext {
@@ -235,11 +215,6 @@ public class ExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitADD(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitADD(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class SUBContext extends ExprContext {
 		public List<ExprContext> expr() {
@@ -257,11 +232,6 @@ public class ExprParser extends Parser {
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitSUB(this);
 		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitSUB(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 	public static class ParensContext extends ExprContext {
 		public ExprContext expr() {
@@ -275,11 +245,6 @@ public class ExprParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitParens(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitParens(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 	public static class MULContext extends ExprContext {
@@ -297,11 +262,6 @@ public class ExprParser extends Parser {
 		@Override
 		public void exitRule(ParseTreeListener listener) {
 			if ( listener instanceof ExprListener ) ((ExprListener)listener).exitMUL(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof ExprVisitor ) return ((ExprVisitor<? extends T>)visitor).visitMUL(this);
-			else return visitor.visitChildren(this);
 		}
 	}
 
